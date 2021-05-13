@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!-- saved from url=(0079)https://livesql.oracle.com/apex/f?p=590:71:1974121957656::NO::P71_OWNER:CURRENT -->
+<html class="page-71 app-LIVESQL" lang="en" data-xadprotection="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="x-ua-compatible" content="IE=edge">
+  
+  <title>Oracle Live SQL - Schema</title>
+  <link rel="stylesheet" href="./Oracle Live SQL - Schema_files/Core.min.css" type="text/css">
+<link rel="stylesheet" href="./Oracle Live SQL - Schema_files/Theme-Standard.min.css" type="text/css">
+<link rel="stylesheet" href="./Oracle Live SQL - Schema_files/jquery-ui-apex.min.css" type="text/css">
+
+  <link rel="stylesheet" href="./Oracle Live SQL - Schema_files/font-apex.min.css" type="text/css">
+<link rel="stylesheet" href="./Oracle Live SQL - Schema_files/Core.min(1).css" type="text/css">
+
+  
+  <link rel="stylesheet" href="./Oracle Live SQL - Schema_files/2150237254918769.css" type="text/css">
+
+  <link rel="stylesheet" href="./Oracle Live SQL - Schema_files/livesql.css" type="text/css">
+
+  <style type="text/css">
+.ls-Alert--inline {
+    box-shadow: none;
+    border-width: 0;
+}
+</style>
+
+  <link rel="shortcut icon" href="https://livesql.oracle.com/livesql/static/images/favicon.ico">
+<link rel="apple-touch-icon" href="https://livesql.oracle.com/livesql/static/images/icon.png">
+  
+
+<meta http-equiv="Pragma" content="no-cache"><meta http-equiv="Expires" content="-1"><meta http-equiv="Cache-Control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="BUM28-7GUGJ-B7YY7-XUSPX-EJ96D",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(c){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"BUM28-7GUGJ-B7YY7-XUSPX-EJ96D";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="eqeuaqrgbelgojafaiabmmanwfpx2sa2-f-44e42eb71-clienttons-s.akamaihd.net",i={"ak.v":"29","ak.cp":"881309","ak.ai":parseInt("562634",10),"ak.ol":"0","ak.cr":86,"ak.ipv":6,"ak.proto":"h2","ak.rid":"23b1912f","ak.r":34881,"ak.a2":n,"ak.m":"dscx","ak.n":"essl","ak.bpcip":"2409:4042:2609:1667::","ak.cport":51068,"ak.gh":"49.44.183.28","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1602045978","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==BUZvCXXmrMr8X2ez2GiSZ3ncfsi56jjtVyABIBnexRAJ/BDSVc6v457QdNs8nnvYRYn0w5vZoO9gPV2Tw8ZTa4yvWB5fdXSxoKmJjqJ3uTVyQ7+xXfLoEgGcEjlKq2l3VPu+eXF2+7h0wLKlqjPVia7wmiEoqLUY0B8/u9Rs70N+WGsD0NTjq3SdPKds9ZExmsFsdUREa8xNCmKj2D4lxvxy5yqDNsfNJNIrBQVfm/dbaLTmRxb8/8f+fYkYMjPMdTSpeUjetqxSPcsD4BEyST8Z6j/oFHrCA2/MFhBiiqkloBYAzBoRC905xCFOBMYFUes5Lmjla5T9h2rntSXSlmU2YLvDRZPxuhc9/xe6K/5BVNlFKcmapG0q/sLLBQM24OFYwAAuvdIabxgzGRlIRQoHja9SV8Oq41Z3JmJMcrs=","ak.pv":"4","ak.dpoabenc":""};if(""!==t)i["ak.ruds"]=t;var o={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))i["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(i)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:i,akDNSPreFetchDomain:a,init:function(){if(!o.i){var e=BOOMR.subscribe;e("before_beacon",o.av,null,null),e("onbeacon",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script><link href="./Oracle Live SQL - Schema_files/BUM28-7GUGJ-B7YY7-XUSPX-EJ96D" rel="preload" as="script"><script id="boomr-scr-as" src="./Oracle Live SQL - Schema_files/BUM28-7GUGJ-B7YY7-XUSPX-EJ96D" async=""></script><script src="./Oracle Live SQL - Schema_files/cd0cz0.js.download" id="lfwexobse67kgfogflay"></script><script src="./Oracle Live SQL - Schema_files/k4SZtgV6Oqmd.js.download"></script></head>
+<body class="t-PageBody t-PageBody--showLeft t-PageBody--hideActions apex-side-nav apex-icons-fontapex apex-theme-redwood-light js-navCollapsed--icons js-navExpanded t-PageBody--leftNav" id="t_PageBody" style="touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
+<a href="https://livesql.oracle.com/apex/f?p=590:71:1974121957656::NO::P71_OWNER:CURRENT#main" id="t_Body_skipToContent">Skip to Main Content</a>
+<form action="https://livesql.oracle.com/apex/wwv_flow.accept" method="post" name="wwv_flow" id="wwvFlowForm" data-oj-binding-provider="none" novalidate="">
+<input type="hidden" name="p_flow_id" value="590" id="pFlowId"><input type="hidden" name="p_flow_step_id" value="71" id="pFlowStepId"><input type="hidden" name="p_instance" value="1974121957656" id="pInstance"><input type="hidden" name="p_page_submission_id" value="282378896264925740175395788117505621423" id="pPageSubmissionId"><input type="hidden" name="p_request" value="" id="pRequest"><input type="hidden" name="p_reload_on_submit" value="A" id="pReloadOnSubmit"><input type="hidden" value="282378896264925740175395788117505621423" id="pSalt">
+<header class="t-Header" id="t_Header">
+  
+  <div class="t-Header-branding" role="banner">
+    <div class="t-Header-controls">
+      <button class="t-Button t-Button--icon t-Button--header t-Button--headerTree is-active" aria-label="Expand / Collapse Navigation" title="Expand / Collapse Navigation" id="t_Button_navControl" type="button" aria-controls="t_TreeNav" aria-expanded="true"><span class="t-Header-controlsIcon" aria-hidden="true"></span></button>
+    </div>
+    <div class="t-Header-logo">
+      <a href="https://livesql.oracle.com/apex/f?p=590:1000:1974121957656:::::" class="t-Header-logo-link"><span class="apex-logo-text"><span class="u-vh">Oracle</span> Live SQL</span></a>
+    </div>
+    <div class="t-Header-navBar"><ul class="t-NavigationBar " id="3263937843120997057"><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="javascript:apex.navigation.dialog(&#39;f?p=590:44:1974121957656::NO::P44_PAGE_ID:71\u0026cs=3R-2mC1NUsDk9vATdIlBSIvXz7RXJROtKDEIFOd99VCDstix-JgomQMP4-yrdoCylR8H4HQ9GM_4OnULsjEOxsw\u0026p_dialog_cs=fKjB5MDshofJH5Z_CELBwugEtexRWONyQprrFb8Tgpk22wws-e3FjYiWCxvw16jjZ_o7f0-L0j-3kufrnalO_Q&#39;,{title:&#39;Submit Feedback&#39;,height:&#39;auto&#39;,width:&#39;720&#39;,maxWidth:&#39;960&#39;,modal:true,dialog:null},&#39;t-Dialog-page--standard &#39;+&#39;&#39;,apex.gPageContext$);">
+    <span class="t-Icon fa fa-comment-o"></span><span class="t-Button-label">Feedback</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item ">
+  <a class="t-Button t-Button--icon t-Button--header t-Button--navBar" href="https://livesql.oracle.com/apex/f?p=590:HELP:1974121957656::NO:::">
+    <span class="t-Icon a-Icon icon-help"></span><span class="t-Button-label">Help</span><span class="t-Button-badge"></span>
+  </a>
+</li><li class="t-NavigationBar-item has-username">
+  <button class="t-Button t-Button--icon t-Button t-Button--header t-Button--navBar js-menuButton" type="button" id="L7178662666532670" data-menu="menu_L7178662666532670" aria-haspopup="true" aria-expanded="false">
+      <span class="t-Icon a-Icon icon-user"></span><span class="t-Button-label">OMKARPRANDHAVE@GMAIL.COM</span><span class="t-Button-badge"></span><span class="a-Icon icon-down-arrow"></span>
+  </button></li></ul></div>
+  </div>
+  <div class="t-Header-nav"></div>
+</header>
+<div class="t-Body">
+  <div class="t-Body-nav" id="t_Body_nav" role="navigation" aria-label="Live SQL">
+<div class="t-TreeNav js-navCollapsed--default t-TreeNav--classic a-TreeView" id="t_TreeNav" data-id="71_tree" aria-label="Live SQL" role="tree" aria-hidden="false" style="visibility: inherit;"><ul role="group"><li id="t_TreeNav_0" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div class="a-TreeView-row"></div><div class="a-TreeView-content"><span class="fa fa fa-home"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:1000:1974121957656::NO:::" aria-level="1" aria-selected="false">Home</a></div></li><li id="t_TreeNav_1" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div class="a-TreeView-row"></div><div class="a-TreeView-content"><span class="fa fa fa-terminal"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:1:1974121957656::NO:::" aria-level="1" aria-selected="false">SQL Worksheet</a></div></li><li id="t_TreeNav_2" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div class="a-TreeView-row"></div><span class="a-TreeView-toggle"></span><div class="a-TreeView-content"><span class="fa fa fa-bars"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:6:1974121957656::NO:::" aria-level="1" aria-selected="false" aria-expanded="false">My Session</a></div></li><li id="t_TreeNav_3" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div class="a-TreeView-row is-selected is-current--top"></div><div class="a-TreeView-content is-selected is-current--top"><span class="fa fa fa-database"></span><a tabindex="0" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:71:1974121957656::NO:::" aria-level="1" aria-selected="true">Schema</a></div></li><li id="t_TreeNav_4" class="a-TreeView-node is-expandable a-TreeView-node--topLevel"><div class="a-TreeView-row"></div><span class="a-TreeView-toggle"></span><div class="a-TreeView-content"><span class="fa fa fa-magic"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:800:1974121957656::NO:::" aria-level="1" aria-selected="false" aria-expanded="false">Quick SQL</a></div></li><li id="t_TreeNav_5" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div class="a-TreeView-row"></div><div class="a-TreeView-content"><span class="fa fa fa-file-text-o"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:17:1974121957656::NO:::" aria-level="1" aria-selected="false">My Scripts</a></div></li><li id="t_TreeNav_6" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div class="a-TreeView-row"></div><div class="a-TreeView-content"><span class="fa fa fa-graduation-cap"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:12:1974121957656::NO:::" aria-level="1" aria-selected="false">My Tutorials</a></div></li><li id="t_TreeNav_7" class="a-TreeView-node a-TreeView-node--leaf a-TreeView-node--topLevel"><div class="a-TreeView-row"></div><div class="a-TreeView-content"><span class="fa fa fa-cubes"></span><a tabindex="-1" role="treeitem" class="a-TreeView-label" href="https://livesql.oracle.com/apex/f?p=590:49:1974121957656::NO:::" aria-level="1" aria-selected="false">Code Library</a></div></li></ul></div></div>
+  <div class="t-Body-main" style="margin-top: 56px;">
+    <div class="t-Body-title" id="t_Body_title" style="top: 56px;"><div id="R1015993531103836834" class="t-BreadcrumbRegion t-BreadcrumbRegion--showBreadcrumb t-BreadcrumbRegion--useBreadcrumbTitle"> 
+  <div class="t-BreadcrumbRegion-body">
+    <div class="t-BreadcrumbRegion-breadcrumb">
+      <ul class="t-Breadcrumb "><li class="t-Breadcrumb-item is-active"><h1 class="t-Breadcrumb-label">Schema</h1></li></ul><div id="actions" class=""></div>
+    </div>
+    <div class="t-BreadcrumbRegion-title">
+      <h1 class="t-BreadcrumbRegion-titleText">Breadcrumb</h1>
+    </div>
+  </div>
+  <div class="t-BreadcrumbRegion-buttons"><button class="t-Button t-Button--noLabel t-Button--icon t-Button--noUI t-Button--padRight" onclick="javascript:apex.navigation.dialog(&#39;f?p=590:4:1974121957656::NO:RP,4:P4_PAGE_ID:71\u0026p_dialog_cs=KWexEpbNoi5weQfkl0NH1fhr_SlmUFXcWq-m_skbrLgH2wpZcS_bTDV8Cn-CYAQkTMYxvvtmdsN5eie8yr8jVw&#39;,{title:&#39;About&#39;,height:&#39;auto&#39;,width:&#39;720&#39;,maxWidth:&#39;960&#39;,modal:true,dialog:null},&#39;t-Dialog-page--standard &#39;+&#39;&#39;,apex.jQuery(&#39;#B109708396689854016&#39;));" type="button" id="B109708396689854016" title="About" aria-label="About"><span class="t-Icon fa fa-info-circle-o" aria-hidden="true"></span></button><button class="t-Button t-Button--icon t-Button--noUI t-Button--iconLeft t-Button--padRight" onclick="javascript:apex.navigation.dialog(&#39;f?p=590:96:1974121957656::NO:RP,96,97::\u0026cs=3QhW5d0QFZB2L1cQTSXFKjHRkuzbWE8219of0Kaw0gSWjAGV4KjM3wGWvlx4Q4GJLmqE40Xe71cmIUJYeWHqJDw\u0026p_dialog_cs=02fEG13znjRjtQblxdYAVqm_TX7aewdF-7GnFULVFuO-12Q3EFBuMMcdqgp-H8_MLgvbZIHlldx7TU45e1MJkQ&#39;,{title:&#39;Upload Script&#39;,height:&#39;auto&#39;,width:&#39;720&#39;,maxWidth:&#39;960&#39;,modal:true,dialog:null},&#39;t-Dialog-page--wizard &#39;+&#39;&#39;,apex.jQuery(&#39;#B13589658488797681&#39;));" type="button" id="B13589658488797681"><span class="t-Icon t-Icon--left fa fa-upload" aria-hidden="true"></span><span class="t-Button-label">Upload Script</span><span class="t-Icon t-Icon--right fa fa-upload" aria-hidden="true"></span></button><button class="t-Button t-Button--icon js-menuButton t-Button--iconRight" data-menu="actions_menu" onclick="void(0);" type="button" id="B3157356354331606" aria-haspopup="true" aria-expanded="false"><span class="t-Icon t-Icon--left fa fa-angle-down" aria-hidden="true"></span><span class="t-Button-label">Actions</span><span class="t-Icon t-Icon--right fa fa-angle-down" aria-hidden="true"></span></button><button class="t-Button t-Button--icon t-Button--iconLeft t-Button--hot" onclick="javascript:apex.navigation.dialog(&#39;f?p=590:40:1974121957656::NO:RP,40::\u0026cs=3puRDYvhQiVtbzRuSxEgGo4fmnL-_ZJ1GGZ30cCP48RJCxNsr99rlldtMpjh37Ky4AxeKdaGrC_LiszjTjdp8rw\u0026p_dialog_cs=8mjW3DqjgVeaqHdG4hyyoZS-vU4JjmDEQDgtCnvHNyMNpf13sCJCAJbuu184x1CBn7axwoU22ycxq5WMqMxQ6g&#39;,{title:&#39;Create Database Object&#39;,height:&#39;auto&#39;,width:&#39;720&#39;,maxWidth:&#39;960&#39;,modal:true,dialog:null},&#39;t-Dialog-page--standard &#39;+&#39;&#39;,apex.jQuery(&#39;#B7528864222074526&#39;));" type="button" id="B7528864222074526"><span class="t-Icon t-Icon--left fa fa-plus" aria-hidden="true"></span><span class="t-Button-label">Create Database Object</span><span class="t-Icon t-Icon--right fa fa-plus" aria-hidden="true"></span></button></div>
+</div></div>
+    <div class="t-Body-side" id="t_Body_side" style="top: 137px;"><div id="R7739074048226179" class="padding-md  t-Form--stretchInputs"><div class="t-Form-fieldContainer t-Form-fieldContainer--hiddenLabel rel-col t-Form-fieldContainer--stretchInputs t-Form-fieldContainer--large apex-item-wrapper apex-item-wrapper--text-field apex-item-wrapper--has-icon" id="P71_SEARCH_CONTAINER"><div class="t-Form-labelContainer t-Form-labelContainer--hiddenLabel col col-null">
+<label for="P71_SEARCH" id="P71_SEARCH_LABEL" class="t-Form-label u-VisuallyHidden">Search</label>
+</div><div class="t-Form-inputContainer col col-null"><div class="t-Form-itemWrapper"><input type="text" id="P71_SEARCH" name="P71_SEARCH" placeholder="Search Database Objects" class="text_field apex-item-text apex-item-has-icon" value="" size="28" maxlength="4000"><span class="apex-item-icon fa fa-search" aria-hidden="true"></span></div><span id="P71_SEARCH_error_placeholder" class="a-Form-error" data-template-id="3114753988868898_ET"></span></div></div><div class="t-Form-fieldContainer t-Form-fieldContainer--stacked  apex-item-wrapper apex-item-wrapper--select-list " id="P71_OWNER_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P71_OWNER" id="P71_OWNER_LABEL" class="t-Form-label">Schema</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><select id="P71_OWNER" name="P71_OWNER" class="selectlist apex-item-select" size="1" onchange="location.href=&#39;f?p=590:71:1974121957656::NO::P71_OWNER:&#39;+encodeURIComponent(this.options[selectedIndex].value);"><option value="CURRENT" selected="selected">My Schema</option>
+<option value="AD">Academic (AD)</option>
+<option value="AV">Analytic Views (AV)</option>
+<option value="CO">Customer Orders (CO)</option>
+<option value="DD">DinoDate Demo (DD)</option>
+<option value="SCOTT">EMP and DEPT (SCOTT)</option>
+<option value="HR">Human Resources (HR)</option>
+<option value="OLYM">Olympic Data (OLYM)</option>
+<option value="OE">Order Entry (OE)</option>
+<option value="SH">Sales History (SH)</option>
+<option value="WORLD">World Data (WORLD)</option>
+</select></div><span id="P71_OWNER_error_placeholder" class="a-Form-error" data-template-id="3114986549868898_ET"></span></div></div><div class="t-Form-fieldContainer t-Form-fieldContainer--stacked  apex-item-wrapper apex-item-wrapper--select-list " id="P71_ORDERING_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P71_ORDERING" id="P71_ORDERING_LABEL" class="t-Form-label">Sort By</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><select id="P71_ORDERING" name="P71_ORDERING" class="selectlist apex-item-select" size="1" onchange="location.href=&#39;f?p=590:71:1974121957656::NO::P71_ORDERING:&#39;+encodeURIComponent(this.options[selectedIndex].value);"><option value="DATE">Date Desc</option>
+<option value="DATE_ASC" selected="selected">Date Asc</option>
+<option value="NAME">Name</option>
+</select></div><span id="P71_ORDERING_error_placeholder" class="a-Form-error" data-template-id="3114986549868898_ET"></span></div></div><div class="t-Form-fieldContainer t-Form-fieldContainer--stacked  apex-item-wrapper apex-item-wrapper--radiogroup " id="P71_OPTIONS_CONTAINER"><div class="t-Form-labelContainer">
+<label for="P71_OPTIONS" id="P71_OPTIONS_LABEL" class="t-Form-label">Options</label>
+</div><div class="t-Form-inputContainer"><div class="t-Form-itemWrapper"><div tabindex="-1" id="P71_OPTIONS" aria-labelledby="P71_OPTIONS_LABEL" class="radio_group apex-item-group apex-item-group--rc apex-item-radio" role="group">
+<div class="apex-item-option"><input type="radio" id="P71_OPTIONS_0" name="P71_OPTIONS" value="PRIMARY" checked="checked"><label for="P71_OPTIONS_0">Primary Objects</label></div>
+<div class="apex-item-option"><input type="radio" id="P71_OPTIONS_1" name="P71_OPTIONS" value="SECONDARY"><label for="P71_OPTIONS_1">Primary and Subordinate</label></div>
+</div>
+</div><span id="P71_OPTIONS_error_placeholder" class="a-Form-error" data-template-id="3114986549868898_ET"></span></div></div><button class="t-Button t-Button--icon t-Button--iconLeft t-Button--gapTop" onclick="apex.navigation.redirect(&#39;f?p=590:71:1974121957656::NO:RP,71::&#39;);" type="button" id="B1015996227451900393"><span class="t-Icon t-Icon--left fa fa-undo" aria-hidden="true"></span><span class="t-Button-label">Reset Search</span><span class="t-Icon t-Icon--right fa fa-undo" aria-hidden="true"></span></button></div></div>
+    <div class="t-Body-content" id="t_Body_content"><div id="t_Body_content_offset" style="height: 81px;"></div>
+      <main id="main" class="t-Body-mainContent">
+        <span id="APEX_SUCCESS_MESSAGE" data-template-id="3035058897868850_S" class="apex-page-success u-hidden"></span><span id="APEX_ERROR_MESSAGE" data-template-id="3035058897868850_E" class="apex-page-error u-hidden"></span>
+        <div class="t-Body-fullContent"></div>
+        <div class="t-Body-contentInner"><div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto"><div id="R3161549781331648" class="" aria-live="polite"><div id="report_3161549781331648_catch"><ul class="t-Cards u-colors t-Cards--compact t-Cards--displayIcons t-Cards--3cols t-Cards--animColorFill" id="R3161549781331648_cards" data-region-id="R3161549781331648">
+
+<li class="t-Cards-item #CARD_MODIFIERS#">
+  <div class="t-Card">
+    <a href="https://livesql.oracle.com/apex/f?p=590:200:1974121957656:::200:P200_ID:48797499&amp;cs=3t8nv8IZq3iLVcknr2PGH30D4nQ0OA0PQkOGAQ_hBAXr349BCo4r-D63iV-gGEDjkT3BKF1EAcKnj6i0D-5GeQw" class="t-Card-wrap">
+      <div class="t-Card-icon u-color #CARD_COLOR#"><span class="t-Icon fa fa-table"><span class="t-Card-initials" role="presentation">#CARD_INITIALS#</span></span></div>
+      <div class="t-Card-titleWrap"><h3 class="t-Card-title">STUD</h3><h4 class="t-Card-subtitle">#CARD_SUBTITLE#</h4></div>
+      <div class="t-Card-body">
+        <div class="t-Card-desc"><strong>Table</strong><br>Status: Valid</div>
+        <div class="t-Card-info">Created 17 seconds ago</div>
+      </div>
+      <span class="t-Card-colorFill u-color #CARD_COLOR#"></span>
+    </a>
+  </div>
+</li>
+</ul>
+<table class="t-Report-pagination" role="presentation"></table></div></div></div>
+</div><div class="row">
+<div class="col col-12 apex-col-auto"><div id="sample_schemas_parent">
+
+</div></div>
+</div>
+</div></div>
+      </main>
+      <footer class="t-Footer" role="contentinfo">
+        <div class="t-Footer-body">
+          <div class="t-Footer-content"><div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto"><div id="R1012157221149035436" class=""><span class="footer-sql">© 2020 Oracle Corporation</span> · <a href="http://www.oracle.com/us/legal/privacy/overview/index.html" target="_blank">Privacy</a>  · <a href="http://www.oracle.com/us/legal/terms/index.html" target="_blank">Terms of Use</a> <br><a href="https://apex.oracle.com/pls/apex/f?p=44785:1:0:::::" target="_blank">Oracle Learning Library</a> · <a href="https://asktom.oracle.com/pls/apex/f?p=100:::::::" target="_blank">Ask Tom</a> · <a href="https://devgym.oracle.com/" target="_blank">Dev Gym</a> · <a href="https://docs.oracle.com/en/database/oracle/oracle-database/19/index.html" target="_blank">Database Doc 19c</a> , <a href="https://docs.oracle.com/en/database/oracle/oracle-database/18/index.html" target="_blank">18c</a> , <a href="http://docs.oracle.com/database/121/index.htm" target="_blank">12c</a>  · <span class="footer-social"><a href="https://twitter.com/oraclelivesql" target="_blank">Follow on Twitter</a></span></div></div>
+</div>
+</div></div>
+          <div class="t-Footer-apex">
+            <div class="t-Footer-version">Live SQL 20.3.1, running Oracle Database 19c Enterprise Edition - 19.8.0.0.0</div>
+            <div class="t-Footer-customize"></div>
+            <span class="u-BuiltWithAPEX">Built with <span class="fa fa-heart"><span class="u-VisuallyHidden">love</span></span> using <a href="https://apex.oracle.com/" target="_blank" title="Oracle Application Express">Oracle APEX</a></span>
+          </div>
+        </div>
+        <div class="t-Footer-top">
+          <a href="https://livesql.oracle.com/apex/f?p=590:71:1974121957656::NO::P71_OWNER:CURRENT#top" class="t-Footer-topButton" id="t_Footer_topButton" title="Start of page"><span class="a-Icon icon-up-chevron"></span></a>
+        </div>
+      </footer>
+    </div>
+  </div>
+</div>
+<div class="t-Body-inlineDialogs"><div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto"><div id="CLEAR_parent">
+
+</div></div>
+</div>
+</div></div><input type="hidden" id="pPageFormRegionChecksums" value="[]">
+<input type="hidden" id="pPageItemsRowVersion" value=""><input type="hidden" id="pPageItemsProtected" value="A18TcEQkpC5KNFnkPmUX2FxcY8gaiyvBC3TfgYfFSGo"><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog--inline ui-draggable ui-resizable" aria-describedby="sample_schemas" aria-labelledby="ui-id-1" style="display: none; position: fixed;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-1" class="ui-dialog-title">Sample Schemas</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="sample_schemas" class="t-DialogRegion js-modal js-draggable js-resizable js-dialog-autoheight js-dialog-size600x400 js-regionDialog ui-dialog-content ui-widget-content" style="">
+  <div class="t-DialogRegion-wrap">
+    <div class="t-DialogRegion-bodyWrapperOut"><div class="t-DialogRegion-bodyWrapperIn"><div class="t-DialogRegion-body"><p class="small">Live SQL provides read only access to sample schemas used by Oracle documentation including:</p>
+<ul>
+    <li>Human Resources (HR) - Oracle's HR sample schema.</li>
+    <li>Sales History (SH) - Oracle's SH sample schema (except SH.SALES_TRANSACTIONS_EXT).</li>
+    <li>EMP and DEPT (SCOTT) - Oracle's SCOTT schema (containing the commonly referenced EMP and DEPT tables).</li>
+    <li>World Data (WORLD) - Contains a WORLD_POPULATION table populated with data from 1960-2012.</li>
+    <li>DinoDate Demo (DD) - The schema behind <a href="https://community.oracle.com/docs/DOC-998357" target="_blank">DinoDate</a>: the Premier Dating Website for Dinosaurs, an <a href="https://github.com/oracle/dino-date" target="_blank">open source</a> demonstration application.</li>
+    <li>Analytic Views (AV) - Used by the Analytic Views Hands-On Introduction.</li>
+    <li>Olympic Data (OLYM) - Summer Olympic medal winners from 1896 - 2008. Curated by Simon Rogers (<a href="https://www.theguardian.com/" target="_blank">the Guardian</a>) and released as <a href="https://www.theguardian.com/sport/datablog/2012/jun/25/olympic-medal-winner-list-data#data" target="_blank">open data</a>; Source: IOC.</li>
+    <li>Order Entry (OE) - Oracle's OE sample schema.</li>
+    <li>Academic (AD) - Contains course, department, faculty, etc. objects.</li>
+</ul>
+<p>Select a sample schema using the schema selection control.  This will enable you to browse schema objects, view object definition details, and query sample schema data.
+</p></div></div></div>
+    <div class="t-DialogRegion-buttons">
+       <div class="t-ButtonRegion t-ButtonRegion--dialogRegion">
+         <div class="t-ButtonRegion-wrap">
+           <div class="t-ButtonRegion-col t-ButtonRegion-col--left"><div class="t-ButtonRegion-buttons"></div></div>
+           <div class="t-ButtonRegion-col t-ButtonRegion-col--right"><div class="t-ButtonRegion-buttons"></div></div>
+         </div>
+       </div>
+    </div>
+  </div>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div><div tabindex="-1" role="dialog" class="ui-dialog ui-corner-all ui-widget ui-widget-content ui-front ui-dialog--inline ui-draggable ui-resizable" aria-describedby="CLEAR" aria-labelledby="ui-id-2" style="display: none; position: fixed;"><div class="ui-dialog-titlebar ui-corner-all ui-widget-header ui-helper-clearfix ui-draggable-handle"><span id="ui-id-2" class="ui-dialog-title">Drop Database Objects</span><button type="button" class="ui-button ui-corner-all ui-widget ui-button-icon-only ui-dialog-titlebar-close" title="Close"><span class="ui-button-icon ui-icon ui-icon-closethick"></span><span class="ui-button-icon-space"> </span>Close</button></div><div id="CLEAR" class="t-DialogRegion js-modal js-draggable js-resizable js-dialog-autoheight js-dialog-size480x320 js-regionDialog ui-dialog-content ui-widget-content" style="">
+  <div class="t-DialogRegion-wrap">
+    <div class="t-DialogRegion-bodyWrapperOut"><div class="t-DialogRegion-bodyWrapperIn"><div class="t-DialogRegion-body"><div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto"><div class="t-Alert ls-Alert--inline  t-Alert--wizard t-Alert--defaultIcons t-Alert--warning t-Alert--accessibleHeading" id="R3157771979331610">
+  <div class="t-Alert-wrap">
+    <div class="t-Alert-icon">
+      <span class="t-Icon "></span>
+    </div>
+    <div class="t-Alert-content">
+      <div class="t-Alert-header">
+        <h2 class="t-Alert-title" id="R3157771979331610_heading">Drop Database Objects</h2>
+      </div>
+      <div class="t-Alert-body">Are you sure you want to drop all objects in your current schema? This action will also clear your session history.<div class="container">
+<div class="row">
+<div class="col col-12 apex-col-auto"><div class="t-Form-fieldContainer rel-col  apex-item-wrapper apex-item-wrapper--display-only " id="P71_OBJECT_COUNT_CONTAINER"><div class="t-Form-labelContainer col col-6">
+<label for="P71_OBJECT_COUNT" id="P71_OBJECT_COUNT_LABEL" class="t-Form-label">Database Objects</label>
+</div>
+<div class="t-Form-inputContainer col col-6"><div class="t-Form-itemWrapper"><input type="hidden" name="P71_OBJECT_COUNT" id="P71_OBJECT_COUNT" value="1"><input type="hidden" data-for="P71_OBJECT_COUNT" value="UX8OaRHlUdSvtDWyH_M7R4CVEZd-dlmzMLT54RHblplLesTdKM-uZieu_nzM0hZP7zFYbBOQ5FL5GJjbUMWLbA"><span id="P71_OBJECT_COUNT_DISPLAY" class="display_only apex-item-display-only">1</span></div><span id="P71_OBJECT_COUNT_error_placeholder" class="a-Form-error" data-template-id="3114813722868898_ET"></span></div></div></div>
+</div>
+</div></div>
+    </div>
+    <div class="t-Alert-buttons"></div>
+  </div>
+</div></div>
+</div>
+</div></div></div></div>
+    <div class="t-DialogRegion-buttons">
+       <div class="t-ButtonRegion t-ButtonRegion--dialogRegion">
+         <div class="t-ButtonRegion-wrap">
+           <div class="t-ButtonRegion-col t-ButtonRegion-col--left"><div class="t-ButtonRegion-buttons"></div></div>
+           <div class="t-ButtonRegion-col t-ButtonRegion-col--right"><div class="t-ButtonRegion-buttons"><button onclick="apex.submit({request:&#39;DROP_OBJECTS&#39;,validate:true});" class="t-Button t-Button--hot " type="button" id="B1016007502150074990"><span class="t-Button-label">Drop Objects</span></button></div></div>
+         </div>
+       </div>
+    </div>
+  </div>
+</div><div class="ui-resizable-handle ui-resizable-n" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-e" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-s" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-w" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 90;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 90;"></div></div></form>
+
+
+<script>
+var apex_img_dir = "/i/", htmldb_Img_Dir = apex_img_dir;
+</script>
+<script src="./Oracle Live SQL - Schema_files/desktop_all.min.js.download"></script>
+<script src="./Oracle Live SQL - Schema_files/wwv_flow.js_messages"></script>
+<script src="./Oracle Live SQL - Schema_files/legacy_pre18.min.js.download"></script>
+<script src="./Oracle Live SQL - Schema_files/legacy_18.min.js.download"></script>
+<script src="./Oracle Live SQL - Schema_files/jquery-migrate-3.0.1.min.js.download"></script>
+
+<script type="text/javascript">
+apex.da.initDaEventList = function(){
+apex.da.gEventList = [
+{"triggeringElementType":"BUTTON","triggeringButtonId":"B109708396689854016","bindType":"bind","bindEventType":"click","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,javascriptFunction:function (){ $("#about_page").dialog("open");
+},"action":"NATIVE_JAVASCRIPT_CODE"}]},
+{"triggeringElementType":"BUTTON","triggeringButtonId":"B3157356354331606","bindType":"bind","bindEventType":"click","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"affectedElementsType":"REGION","affectedRegionId":"R1015994025668844143",javascriptFunction:apex.da.refresh,"action":"NATIVE_REFRESH"}]},
+{"triggeringElementType":"ITEM","triggeringElement":"P71_OPTIONS","bindType":"bind","bindEventType":"change","anyActionsFireOnInit":false,actionList:[{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"waitForResult":true,javascriptFunction:apex.da.executePlSqlCode,"ajaxIdentifier":"IG6YXbKxrljIB0Ua9ABruwIQlQ-LM6Va0vbSiqm8_84","attribute01":"#P71_OPTIONS","attribute04":"N","action":"NATIVE_EXECUTE_PLSQL_CODE"},{"eventResult":true,"executeOnPageInit":false,"stopExecutionOnError":true,"affectedElementsType":"REGION","affectedRegionId":"R3161549781331648",javascriptFunction:apex.da.refresh,"action":"NATIVE_REFRESH"}]}];
+}
+</script>
+
+<script src="./Oracle Live SQL - Schema_files/widget.stickyWidget.min.js.download"></script>
+<script src="./Oracle Live SQL - Schema_files/theme42.min.js.download"></script>
+
+
+<script src="./Oracle Live SQL - Schema_files/table2CSV.js.download"></script>
+<script src="./Oracle Live SQL - Schema_files/widget.apexTabs.min.js.download"></script>
+
+  
+
+
+
+
+
+<script src="./Oracle Live SQL - Schema_files/widget.treeView.min.js.download"></script>
+<script src="./Oracle Live SQL - Schema_files/widget.report.min.js.download"></script>
+
+
+
+
+<script type="text/javascript">
+apex.jQuery( function() {
+apex.page.init( this, function() {
+apex.jQuery.when.apply( apex.jQuery, apex.page.loadingDeferreds ).done(function() {
+try {
+(function(){apex.jQuery('body').addClass('t-PageBody--leftNav');})();
+(function(){var e = apex.jQuery("#actions_menu", apex.gPageContext$);
+if (e.hasClass("js-addActions")) {
+  apex.actions.addFromMarkup( e );
+}
+e.menu({ slide: e.hasClass("js-slide"), iconType: 'fa', callout: e.hasClass("js-menu-callout")});})();
+(function(){apex.widget.selectList("#P71_OWNER",{"nullValue":"CURRENT","ajaxIdentifier":"f9NeuNexMPYRcDX-PxX1iYvJ-2xE3gH_iX_Au6pcH2edjnAkwc7kJkCaty1B4pYu"});})();
+(function(){apex.widget.selectList("#P71_ORDERING",{"ajaxIdentifier":"f9NeuNexMPYRcDX-PxX1iYvqV11cBQ6sGb8z-7t2Tz0ctKOlhEeyfGuBSx1wOeKl"});})();
+(function(){apex.widget.checkboxAndRadio("#P71_OPTIONS","radio",{"ajaxIdentifier":"f9NeuNexMPYRcDX-PxX1icJCH6_9xRdVNkq6bZDpH4N0_0CML3D6IRuhbIIdH2OU","optimizeRefresh":true,"inputName":"P71_OPTIONS"});})();
+(function(){apex.widget.report.init("R3161549781331648","FuV4wN_yo3DX_B0z1wP2UWM7rtfi4d1xVkGtzefE_vA",{"styleChecked":"#dddddd","internalRegionId":"3161549781331648"});})();
+(function(){apex.da.initDaEventList();})();
+(function(){apex.da.init();})();
+apex.theme42.initializePage.leftSideCol();
+
+apex.item( 'P71_SEARCH' ).setFocus();
+} finally {
+apex.event.trigger(apex.gPageContext$,'apexreadyend');
+}
+});
+});
+});</script>
+
+
+<input id="apexCBMDummySelection" style="display:none;" value="x"><div id="pushModal" style="width: 100%; display:none; height: 100%;" class="u-DisplayNone u-Overlay--glass"></div><div id="actions_menu" class="a-Menu" style="position: absolute; top: 122.1px; left: 1240.26px; display: none;" tabindex="-1" role="menu"><div class="a-Menu-content"><ul><li id="actions_menu_0" class="a-Menu-item"><div class="a-Menu-inner"><span class="a-Menu-labelContainer"><span class="a-Menu-statusCol"><span class="fa fa-trash-o"></span></span><a href="javascript:apex.navigation.dialog(&#39;f?p=590:14:1974121957656::NO:14\u0026p_dialog_cs=oInz46CxYDOyyIOFO_WAixdaPasjog8D0Y_VXfiNyJrOn6hT0RfRrUObjj7zirafXtgrTwmXoyT3dg5eTaxSWA&#39;,{title:&#39;Drop Database Objects&#39;,height:&#39;auto&#39;,width:&#39;480&#39;,maxWidth:&#39;960&#39;,modal:true,dialog:null},&#39;t-Dialog-page--standard &#39;+&#39;&#39;,apex.jQuery(&#39;#actions_menu&#39;));" id="actions_menu_0i" role="menuitem" class="a-Menu-label">Drop All Objects</a></span><span class="a-Menu-accelContainer"><span class="a-Menu-subMenuCol"></span></span></div></li><li id="actions_menu_1" class="a-Menu-item"><div class="a-Menu-inner"><span class="a-Menu-labelContainer"><span class="a-Menu-statusCol"><span class="fa fa-cog"></span></span><a href="javascript:apex.navigation.dialog(&#39;f?p=590:506:1974121957656::NO\u0026p_dialog_cs=d5mE1x1HyF7rzC0wZGJaZXMqxbcJefj2kqoneYJUYy_Bsg42sCglnZP3yD5ocHQiiKZOPdji5W2OwcVAbFfTbQ&#39;,{title:&#39;DDL&#39;,height:&#39;auto&#39;,width:&#39;720&#39;,maxWidth:&#39;960&#39;,modal:true,dialog:null},&#39;t-Dialog-page--standard &#39;+&#39;&#39;,apex.jQuery(&#39;#actions_menu&#39;));" id="actions_menu_1i" role="menuitem" class="a-Menu-label">Generate DDL</a></span><span class="a-Menu-accelContainer"><span class="a-Menu-subMenuCol"></span></span></div></li></ul></div></div><div class="t-NavigationBar-menu a-Menu" style="display: none" id="menu_L7178662666532670" tabindex="-1" role="menu"><ul><li data-current="false" data-icon=""><a href="javascript:apex.navigation.dialog(&#39;f?p=590:8:1974121957656::NO:RP\u0026p_dialog_cs=EkkZkqqibpTBSScOAv9YZBJrZo-vbGRSt5YSpoQmlkvspaPdFk-u9RGCpIu74NzSYQi18C2st97L4paLqc3jcw&#39;,{title:&#39;Notifications&#39;,height:&#39;auto&#39;,width:&#39;720&#39;,maxWidth:&#39;960&#39;,modal:true,dialog:null},&#39;t-Dialog-page--standard &#39;+&#39;&#39;,apex.gPageContext$);">Notifications</a></li><li data-current="false" data-icon=""><a href="https://livesql.oracle.com/apex/apex_authentication.logout?p_app_id=590&amp;p_session_id=1974121957656">Sign Out</a></li></ul></div></body></html>
